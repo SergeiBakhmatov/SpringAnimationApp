@@ -14,6 +14,8 @@
 		7713A1BF2A0151FC00374943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7713A1BE2A0151FC00374943 /* Assets.xcassets */; };
 		7713A1C22A0151FC00374943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7713A1C02A0151FC00374943 /* LaunchScreen.storyboard */; };
 		7713A1CB2A01538600374943 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 7713A1CA2A01538600374943 /* SpringAnimation */; };
+		7713A1D42A015B9800374943 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713A1D32A015B9800374943 /* DataStore.swift */; };
+		7713A1D62A015BCA00374943 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713A1D52A015BCA00374943 /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		7713A1BE2A0151FC00374943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7713A1C12A0151FC00374943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7713A1C32A0151FC00374943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7713A1D32A015B9800374943 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		7713A1D52A015BCA00374943 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +62,65 @@
 		7713A1B42A0151FB00374943 /* SpringAnimationApp */ = {
 			isa = PBXGroup;
 			children = (
-				7713A1B52A0151FB00374943 /* AppDelegate.swift */,
-				7713A1B72A0151FB00374943 /* SceneDelegate.swift */,
-				7713A1B92A0151FB00374943 /* ViewController.swift */,
-				7713A1BB2A0151FB00374943 /* Main.storyboard */,
-				7713A1BE2A0151FC00374943 /* Assets.xcassets */,
-				7713A1C02A0151FC00374943 /* LaunchScreen.storyboard */,
-				7713A1C32A0151FC00374943 /* Info.plist */,
+				7713A1CC2A01580000374943 /* ViewController */,
+				7713A1CD2A01588900374943 /* Models */,
+				7713A1CE2A01589E00374943 /* Services */,
+				7713A1CF2A0158B500374943 /* StoryBoards */,
+				7713A1D02A0158E000374943 /* App */,
+				7713A1D22A01595B00374943 /* Resources */,
 			);
 			path = SpringAnimationApp;
+			sourceTree = "<group>";
+		};
+		7713A1CC2A01580000374943 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7713A1B92A0151FB00374943 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7713A1CD2A01588900374943 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7713A1D52A015BCA00374943 /* Animation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7713A1CE2A01589E00374943 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7713A1D32A015B9800374943 /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7713A1CF2A0158B500374943 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				7713A1BB2A0151FB00374943 /* Main.storyboard */,
+				7713A1C02A0151FC00374943 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		7713A1D02A0158E000374943 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7713A1B72A0151FB00374943 /* SceneDelegate.swift */,
+				7713A1B52A0151FB00374943 /* AppDelegate.swift */,
+				7713A1C32A0151FC00374943 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7713A1D22A01595B00374943 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7713A1BE2A0151FC00374943 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +201,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7713A1BA2A0151FB00374943 /* ViewController.swift in Sources */,
+				7713A1D42A015B9800374943 /* DataStore.swift in Sources */,
 				7713A1B62A0151FB00374943 /* AppDelegate.swift in Sources */,
+				7713A1D62A015BCA00374943 /* Animation.swift in Sources */,
 				7713A1B82A0151FB00374943 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LBNC46BWQQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpringAnimationApp/Info.plist;
+				INFOPLIST_FILE = SpringAnimationApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,7 +384,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LBNC46BWQQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpringAnimationApp/Info.plist;
+				INFOPLIST_FILE = SpringAnimationApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
