@@ -34,13 +34,13 @@ final class ViewController: UIViewController {
 
     }
     
-    
     @IBAction func runButoonTapped(_ sender: UIButton) {
         
         if !animationStarted {
             springView.animation = currentPreset
             springView.curve = currentCurve
             springView.animate()
+            
             animationStarted.toggle()
             
             nextPreset = animations.preset.randomElement() ?? ""
