@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="seN-kN-0PR" customClass="SpringView" customModule="SpringAnimation">
-                                <rect key="frame" x="70" y="60" width="235" height="118.5"/>
+                                <rect key="frame" x="70" y="60" width="235" height="45"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dBh-CU-fzm">
-                                        <rect key="frame" x="6" y="0.0" width="229" height="118.5"/>
+                                        <rect key="frame" x="6" y="0.0" width="229" height="45"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preset:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxj-AN-JwB">
                                                 <rect key="frame" x="0.0" y="0.0" width="229" height="20.5"/>
@@ -30,24 +30,6 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curve: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auU-fe-M3p">
                                                 <rect key="frame" x="0.0" y="24.5" width="229" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaA-RR-Orh">
-                                                <rect key="frame" x="0.0" y="49" width="229" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRq-R3-8l8">
-                                                <rect key="frame" x="0.0" y="73.5" width="229" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deley: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDj-Gj-gFy">
-                                                <rect key="frame" x="0.0" y="98" width="229" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -101,9 +83,6 @@
                     </view>
                     <connections>
                         <outlet property="curveLabel" destination="auU-fe-M3p" id="a81-6L-M7w"/>
-                        <outlet property="deleyLabel" destination="LDj-Gj-gFy" id="1mC-VI-B4L"/>
-                        <outlet property="durationLabel" destination="VRq-R3-8l8" id="wwN-xk-jnP"/>
-                        <outlet property="forceLabel" destination="vaA-RR-Orh" id="njY-5R-Bgu"/>
                         <outlet property="presetLabal" destination="oxj-AN-JwB" id="mqZ-gW-Qng"/>
                         <outlet property="springView" destination="seN-kN-0PR" id="WOM-5B-CTV"/>
                     </connections>
